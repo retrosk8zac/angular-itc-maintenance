@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<h3>
+	Enter In Maintenance Contract Information Below
+</h3>
+
+<div>
+<form [formGroup]="contractForm" (ngSubmit)="onSubmit()">
+    <h3>Contract Info 
+</h3>
+  <label>
+    Title:
+    <input type="text" formControlName="title">
+  </label> <br>
+<label>
+    Customer:
+    <input type="text" formControlName="customer">
+  </label> <br>
+<label>
+    status:
+    <input type="text" formControlName="status">
+  </label>
+<label>
+    Open Date:
+    <input type="text" formControlName="open_date">
+  </label>  
+<label>
+    Description:
+    <input type="descrition" formControlName="description">
+  </label>
+
+
+<div formGroupName="building">
+    <h3>Building Info</h3>
+    <label>
+      Building Name:
+      <input type="text" formControlName="building_name">
+    </label> <br>
+    <label>
+      Address:
+      <input type="text" formControlName="address">
+    </label>
+  </div>
+
+
+<button type="submit">Submit Contract</button>
+</form>
+
+</div>
